@@ -1,0 +1,31 @@
+<div ng-controller="noCtrl">
+	<h1>Address</h1>
+	<form>
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input ng-model="searchParams.name" class="form-control" id="name">
+		</div>
+		<button class="btn btn-info" ng-click="doSearch()">Search</button>
+	</form>
+
+<table>
+	<thead>
+	<tr>
+		<th>name</th><th>name</th><th>name</th><th>name</th>
+	</tr>	
+	</thead>
+<tbody>
+	<tr ng-repeat="n in NAMEOFPATH"></tr>
+<td>{{n.nameofcolumn}}</td>
+<td>{{n.nameofcolumn}}</td>
+<td>{{n.nameofcolumn}}</td>
+<td>{{n.nameofcolumn}}</td>
+</tbody>
+
+
+<td><button ng-click="goToEdit(u.id)">Edit</button></td>
+<td><button ng-click="goToDelete(u.id)">Delete</button></td>
+</table>
+
+
+</div>
